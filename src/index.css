@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+  color: #111;
+  font-family: system-ui, sans-serif;
+}
+
+.workouts-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.workouts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.workout {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.workout img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.workout li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.workout summary {
+  cursor: pointer;
+}
+
+.workout pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
