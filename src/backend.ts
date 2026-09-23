@@ -11,7 +11,8 @@ export async function getWorkouts(bodyParts: string, workoutType: string): Promi
   const muscle = bodyParts.trim().toLowerCase();
   if (!muscle) throw new Error('A muscle group is required.');
 
-  const response = await fetch('/workouts', {
+  const apiUrl = (import.meta.env.VITE_API_URL ?? '').trim().replace(/\/+$/, '');
+  const response = await fetch(`${apiUrl}/workouts`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ bodyParts: muscle, workoutType: workout }),
