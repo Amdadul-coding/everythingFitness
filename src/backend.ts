@@ -1,4 +1,5 @@
 export interface Workout {
+  name?: string;
   bodyParts: string[];
   gifUrl: string;
   targetMuscles: string[];

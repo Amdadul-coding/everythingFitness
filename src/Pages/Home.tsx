@@ -47,12 +47,10 @@ export default function Home({ onComplete, initialSelection }: HomeProps) {
               <button className="location-card" type="button" onClick={() => chooseLocation('gym')}>
                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M15 24h18M6 19v10m36-10v10" /><rect x="9" y="13" width="6" height="22" rx="2" /><rect x="33" y="13" width="6" height="22" rx="2" /></svg>
                 <span className="location-name">At the gym <span aria-hidden="true">↗</span></span>
-                <span className="location-description">Find your focus on the gym floor.</span>
               </button>
               <button className="location-card" type="button" onClick={() => chooseLocation('home')}>
                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="m7 22 17-14 17 14M12 19v21h24V19M20 40V27h8v13" /></svg>
                 <span className="location-name">At home <span aria-hidden="true">↗</span></span>
-                <span className="location-description">Make a little room for movement.</span>
               </button>
             </div>
           ) : (

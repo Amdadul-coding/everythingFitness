@@ -22,7 +22,6 @@
 .location-card:hover { background: #eaf1dc; border-color: #8ba270; transform: translateY(-3px); }
 .location-card svg { display: block; width: 48px; height: 48px; color: #4c6541; margin-bottom: 30px; }
 .location-name { display: flex; align-items: center; justify-content: space-between; font-size: 26px; font-weight: 600; letter-spacing: -0.7px; }
-.location-description { display: block; color: #687165; font-size: 14px; margin-top: 12px; line-height: 1.5; }
 .muscle-options { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .muscle-option { position: relative; cursor: pointer; }
 .muscle-option input, .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
